@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		04504EBC25D452F200378CDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04504EBB25D452F200378CDB /* AppDelegate.swift */; };
 		04504EBE25D452F200378CDB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04504EBD25D452F200378CDB /* SceneDelegate.swift */; };
-		04504EC025D452F200378CDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04504EBF25D452F200378CDB /* ViewController.swift */; };
+		04504EC025D452F200378CDB /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04504EBF25D452F200378CDB /* WelcomeViewController.swift */; };
 		04504EC325D452F200378CDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04504EC125D452F200378CDB /* Main.storyboard */; };
 		04504EC525D452F400378CDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04504EC425D452F400378CDB /* Assets.xcassets */; };
 		04504EC825D452F400378CDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04504EC625D452F400378CDB /* LaunchScreen.storyboard */; };
 		04504ED325D452F400378CDB /* withMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04504ED225D452F400378CDB /* withMeTests.swift */; };
 		04504EDE25D452F400378CDB /* withMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04504EDD25D452F400378CDB /* withMeUITests.swift */; };
+		04504EFE25D4869700378CDB /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04504EFD25D4869700378CDB /* RegisterViewController.swift */; };
+		04504F0325D49DAC00378CDB /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04504F0225D49DAC00378CDB /* ChatViewController.swift */; };
+		04504F0825D4A2EF00378CDB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04504F0725D4A2EF00378CDB /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +41,7 @@
 		04504EB825D452F200378CDB /* withMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = withMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04504EBB25D452F200378CDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04504EBD25D452F200378CDB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		04504EBF25D452F200378CDB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		04504EBF25D452F200378CDB /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		04504EC225D452F200378CDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04504EC425D452F400378CDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04504EC725D452F400378CDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +52,9 @@
 		04504ED925D452F400378CDB /* withMeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = withMeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04504EDD25D452F400378CDB /* withMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = withMeUITests.swift; sourceTree = "<group>"; };
 		04504EDF25D452F400378CDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04504EFD25D4869700378CDB /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		04504F0225D49DAC00378CDB /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		04504F0725D4A2EF00378CDB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +107,9 @@
 			children = (
 				04504EBB25D452F200378CDB /* AppDelegate.swift */,
 				04504EBD25D452F200378CDB /* SceneDelegate.swift */,
-				04504EBF25D452F200378CDB /* ViewController.swift */,
-				04504EC125D452F200378CDB /* Main.storyboard */,
+				04504EEE25D47A6500378CDB /* Models */,
+				04504EEF25D47A6A00378CDB /* Views */,
+				04504EF025D47A8200378CDB /* Controllers */,
 				04504EC425D452F400378CDB /* Assets.xcassets */,
 				04504EC625D452F400378CDB /* LaunchScreen.storyboard */,
 				04504EC925D452F400378CDB /* Info.plist */,
@@ -126,6 +133,32 @@
 				04504EDF25D452F400378CDB /* Info.plist */,
 			);
 			path = withMeUITests;
+			sourceTree = "<group>";
+		};
+		04504EEE25D47A6500378CDB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		04504EEF25D47A6A00378CDB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				04504EC125D452F200378CDB /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		04504EF025D47A8200378CDB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				04504EBF25D452F200378CDB /* WelcomeViewController.swift */,
+				04504EFD25D4869700378CDB /* RegisterViewController.swift */,
+				04504F0225D49DAC00378CDB /* ChatViewController.swift */,
+				04504F0725D4A2EF00378CDB /* LoginViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +291,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04504EC025D452F200378CDB /* ViewController.swift in Sources */,
+				04504F0825D4A2EF00378CDB /* LoginViewController.swift in Sources */,
+				04504EC025D452F200378CDB /* WelcomeViewController.swift in Sources */,
 				04504EBC25D452F200378CDB /* AppDelegate.swift in Sources */,
 				04504EBE25D452F200378CDB /* SceneDelegate.swift in Sources */,
+				04504F0325D49DAC00378CDB /* ChatViewController.swift in Sources */,
+				04504EFE25D4869700378CDB /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
