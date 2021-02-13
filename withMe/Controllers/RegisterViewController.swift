@@ -7,7 +7,12 @@
 
 import UIKit
 
-class ChatViewController: UIViewController {
-
+class RegisterViewController: UIViewController {
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBAction func registerPressed(_ sender: UIButton) {
+        
+    }
+    
     
 }

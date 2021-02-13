@@ -57,6 +57,7 @@
                     </view>
                     <connections>
                         <outlet property="imageView" destination="fYb-z3-YMM" id="bVt-cw-DBd"/>
+                        <outlet property="titleLabel" destination="fYb-z3-YMM" id="gIW-Sm-g9c"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -105,6 +106,9 @@
                                         <state key="normal" title="Register">
                                             <color key="titleColor" name="BrandOrange"/>
                                         </state>
+                                        <connections>
+                                            <action selector="registerPressed:" destination="Z9i-Zm-VDk" eventType="touchUpInside" id="Ocj-hY-xZT"/>
+                                        </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textfield" translatesAutoresizingMaskIntoConstraints="NO" id="OzZ-S4-Zgt">
                                         <rect key="frame" x="0.0" y="20" width="414" height="137"/>
@@ -144,6 +148,10 @@
                             <constraint firstItem="uh6-M5-phl" firstAttribute="top" secondItem="SC6-cQ-vgg" secondAttribute="bottom" constant="-100" id="tEW-J8-IYY"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="6J7-Xu-6jA" id="S2K-d3-xDr"/>
+                        <outlet property="passwordTextField" destination="rRv-pu-97b" id="inl-Bg-6uY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tQN-uU-3cX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -195,6 +203,9 @@
                                         </constraints>
                                         <color key="tintColor" name="BrandPink"/>
                                         <state key="normal" image="paperplane.fill" catalog="system"/>
+                                        <connections>
+                                            <action selector="sendPressed:" destination="fnV-4Q-maf" eventType="touchUpInside" id="82w-Sa-A4v"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" name="BrandLightPink"/>
@@ -221,6 +232,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="lpQ-lZ-Els"/>
+                    <connections>
+                        <outlet property="messageTextField" destination="UNB-yP-o5N" id="Jm7-uS-TNt"/>
+                        <outlet property="tableView" destination="cKv-Yq-5no" id="39r-EU-6ot"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YaE-fH-vkH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -266,8 +281,11 @@
                                         <rect key="frame" x="0.0" y="126" width="414" height="51"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <state key="normal" title="Register">
-                                            <color key="titleColor" name="BrandOrange"/>
+                                            <color key="titleColor" name="BrandBlue"/>
                                         </state>
+                                        <connections>
+                                            <action selector="loginPressed:" destination="176-5Z-Bg3" eventType="touchUpInside" id="kMw-A3-qAU"/>
+                                        </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textfield" translatesAutoresizingMaskIntoConstraints="NO" id="Q38-MR-g5t">
                                         <rect key="frame" x="0.0" y="20" width="414" height="137"/>
@@ -307,6 +325,10 @@
                             <constraint firstItem="V70-mn-Hct" firstAttribute="top" secondItem="zNq-A6-1ZA" secondAttribute="top" id="jC6-21-1oE"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="Jie-bo-XTR" id="aRt-pj-OCd"/>
+                        <outlet property="passwordTextField" destination="CAo-ju-odS" id="WgL-Z6-Otm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cZn-5f-mCW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
